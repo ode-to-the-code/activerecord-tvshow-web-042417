@@ -1,4 +1,5 @@
 require_relative 'spec_helper'
+require 'pry'
 
 describe Show do
 
@@ -67,6 +68,7 @@ describe Show do
   describe "::popular_shows" do
     it "returns an array of all of the shows with a rating above 5" do
       expect(Show.popular_shows).to eq([@rick_and_morty, @law_and_order])
+      # binding.pry
     end
   end
 
